@@ -1,7 +1,7 @@
 package lab3;
 import java.util.Scanner;
 public class lab3 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         GameControl gc;
         String buf_name1;
@@ -20,7 +20,7 @@ public class lab3 {
     }
 }
 
-class GameControl{
+class GameControl {
     private final char x = 'x';
     private final char o = 'o';
     private boolean stop;
@@ -32,7 +32,7 @@ class GameControl{
     private Player player1;
     private Player player2;
 
-    public GameControl(String name1, String name2){
+    public GameControl(String name1, String name2) {
         scanner = new Scanner(System.in);
         pf = new Play_Field();
         player1 = new Player(pf, x, name1);
@@ -41,7 +41,7 @@ class GameControl{
         GameRun();
     }
 
-    private void GameRun(){
+    private void GameRun() {
         do{
             pf.Restart();
             stop = false;

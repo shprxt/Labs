@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch lab3",
+            "request": "launch",
+            "mainClass": "lab3.lab3",
+            "projectName": "Labs_42a25e66"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
